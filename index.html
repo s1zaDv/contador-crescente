@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Progressiva</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #25134d);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 460px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            padding: 36px 30px;
+            text-align: center;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+        }
+
+        .icone {
+            width: 78px;
+            height: 78px;
+            margin: 0 auto 24px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #0ea5e9, #6366f1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            box-shadow: 0 8px 28px rgba(14, 165, 233, 0.25);
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: #7dd3fc;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 30px;
+            padding: 7px 13px;
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .descricao {
+            color: #b9c2d8;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .painel {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 24px 18px;
+            margin-bottom: 20px;
+        }
+
+        .simbolo {
+            font-size: 46px;
+            font-weight: bold;
+            color: #7dd3fc;
+            margin-bottom: 12px;
+        }
+
+        .painel h2 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .painel p {
+            color: #b9c2d8;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .etapas {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 22px;
+        }
+
+        .etapas span {
+            width: 34px;
+            height: 6px;
+            border-radius: 10px;
+            background: #334b70;
+        }
+
+        .etapas span:nth-child(1),
+        .etapas span:nth-child(2),
+        .etapas span:nth-child(3) {
+            background: #38bdf8;
+        }
+
+        .rodape {
+            margin-top: 26px;
+            color: #7f8da8;
+            font-size: 12px;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 28px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <section class="card">
+
+            <div class="icone">↗</div>
+
+            <span class="etiqueta">DESAFIO DE LÓGICA</span>
+
+            <h1>Contagem Progressiva</h1>
+
+            <p class="descricao">
+                Cada número é um passo à frente.
+                Escolha um número e acompanhe
+                a contagem até chegar ao zero ou ultrapassá-lo.
+            </p>
+
+            <div class="painel">
+                <div class="simbolo">− → 0</div>
+
+                <h2>Vamos contar?</h2>
+
+                <p>
+                    Informe um número menor ou igual a zero
+                    e veja a sequência avançar.
+                </p>
+
+                <div class="etapas">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <p class="rodape">
+                Projeto JavaScript • Aprendendo na prática
+            </p>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
