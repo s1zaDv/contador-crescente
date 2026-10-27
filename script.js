@@ -1,8 +1,12 @@
 let num = parseInt(prompt(`Digite seu número:`));
-contador = 0;
+let contador = 0;
 
 while (contador <= num) {
-  alert(`${contador}...`);
+  if (contador != num) {
+    alert(`${contador}...`);
+  } else {
+    alert(`${contador}`);
+  }
 
   contador++;
 }
